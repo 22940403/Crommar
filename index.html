@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crommar - Armado de Máquinas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#quienes">Quienes Somos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <div class="fullwidth-image">
+        <img src="img/1.jpg" alt="Armado de máquinas" />
+        <div class="image-text">
+            <h1>Crommar - Soluciones en Armado de Máquinas</h1>
+        </div>
+    </div>
+    <div class="container">
+        <section id="inicio" class="hero">
+            <img src="img/2.jpg" alt="Armado de máquinas">
+            <div>
+                <h1>Crommar - Armado de Máquinas</h1>
+                <p>En Crommar nos dedicamos a transformar ideas en soluciones mecánicas y tecnológicas. Nuestro equipo está comprometido con la excelencia y la innovación, ofreciendo servicios de armado, diseño y mantenimiento de máquinas para diversos sectores. Nos enorgullece ser parte de proyectos escolares y empresariales que impulsan el desarrollo y la creatividad.</p>
+                <p>Contamos con experiencia en la industria, el hogar y el sector educativo, adaptándonos a las necesidades de cada cliente y garantizando resultados de calidad.</p>
+            </div>
+        </section>
+        <section id="quienes">
+            <h2>¿Quiénes Somos?</h2>
+            <p>En Crommar, somos ingenieros, técnicos y estudiantes apasionados por la tecnología y la mecánica. Nuestra misión es brindar soluciones personalizadas en el armado de máquinas, combinando creatividad, conocimiento y responsabilidad.</p>
+            <p>Desde nuestros inicios, hemos colaborado en proyectos escolares y empresariales, destacándonos por nuestro compromiso, ética profesional y atención al detalle. Creemos en el trabajo en equipo y en la formación continua para mantenernos a la vanguardia en el sector.</p>
+            <p>Nos motiva ayudar a nuestros clientes a alcanzar sus objetivos, ofreciendo asesoría integral y acompañamiento en cada etapa del proceso.</p>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Ofrecemos una amplia gama de servicios para cubrir todas las necesidades relacionadas con el armado y mantenimiento de máquinas:</p>
+            <ul>
+                <li><strong>Armado de máquinas industriales:</strong> Fabricación y ensamblaje de equipos para procesos productivos, adaptados a los requerimientos de cada empresa.</li>
+                <li><strong>Mantenimiento preventivo y correctivo:</strong> Diagnóstico, reparación y optimización de maquinaria para prolongar su vida útil y evitar fallas inesperadas.</li>
+                <li><strong>Asesoría en diseño y automatización:</strong> Desarrollo de proyectos de automatización y mejora de procesos, utilizando tecnología de punta y metodologías innovadoras.</li>
+                <li><strong>Instalación de sistemas eléctricos y mecánicos:</strong> Montaje y puesta en marcha de sistemas integrados, garantizando seguridad y eficiencia.</li>
+            </ul>
+            <p>Trabajamos con materiales de alta calidad y herramientas especializadas, asegurando resultados confiables y duraderos.</p>
+        </section>
+        <section id="galeria">
+            <h2>Galería</h2>
+            <p>Algunos de nuestros proyectos y trabajos realizados:</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center;">
+                <div style="text-align:center; width:200px;">
+                    <img src="img/3.jpg" alt="Armado de máquina CNC industrial" style="width:200px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+                    <small>Armado de máquina CNC para procesos de manufactura industrial.</small>
+                </div>
+                <div style="text-align:center; width:200px;">
+                    <img src="img/4.jpg" alt="Instalación de sistema automatizado" style="width:200px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+                    <small>Instalación de sistema automatizado para línea de producción.</small>
+                </div>
+                <div style="text-align:center; width:200px;">
+                    <img src="img/5.jpg" alt="Mantenimiento de maquinaria eléctrica" style="width:200px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+                    <small>Mantenimiento preventivo de maquinaria eléctrica industrial.</small>
+                </div>
+                <div style="text-align:center; width:200px;">
+                    <img src="img/6.jpg" alt="Diseño de prototipo escolar" style="width:200px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+                    <small>Diseño y armado de prototipo para automatización básica.</small>
+                </div>
+            </div>
+            <p>Cada imagen representa el esfuerzo y dedicación de nuestro equipo en la creación y mejora de maquinaria para diferentes aplicaciones: desde la industria hasta proyectos escolares.</p>
+        </section>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna duda, proyecto o necesitas asesoría? Completa el siguiente formulario y nos pondremos en contacto contigo a la brevedad. Tu opinión y necesidades son muy importantes para nosotros.</p>
+            <form id="contactForm" method="POST" action="guardar_contacto.php" novalidate>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <span class="error" id="errorNombre"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="errorEmail"></span>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <span class="error" id="errorMensaje"></span>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="formMsg"></div>
+        </section>
+    </div>
+</div>
+    <footer style="background:#222; color:#fff; text-align:center; padding:1.5em 0; margin-top:2em;">
+        <p>&copy; 2025 Crommar. Todos los derechos reservados.</p>
+        <p>Contacto: info@crommar.com</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
